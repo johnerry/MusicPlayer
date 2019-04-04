@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Music">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Music Player"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/listColor"
+        android:paddingEnd="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:drawable/screen_background_light"
+        android:orientation="horizontal"
+        android:paddingEnd="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/selectedfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="No file selected"
+             android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:paddingRight="16dp"
+                android:src="@android:drawable/ic_media_rew" />
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:paddingRight="16dp"
+                android:src="@android:drawable/ic_media_play" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/screen_background_light"
+                android:src="@android:drawable/ic_media_ff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
